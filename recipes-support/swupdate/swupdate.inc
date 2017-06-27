@@ -89,9 +89,9 @@ do_configure () {
 
 do_compile() {
   unset LDFLAGS
-  oe_runmake swupdate_unstripped progress_unstripped
+  oe_runmake swupdate_unstripped tools
   cp swupdate_unstripped swupdate
-  cp progress_unstripped progress
+  cp tools/progress_unstripped progress
 
 }
 
